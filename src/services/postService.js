@@ -27,7 +27,10 @@ class Post{
         return axios.delete(url);
 
     }
-
+    updatePost(id, data) {
+        const url = `http://localhost:8002/api/update-post`;
+        return axios.post(url, { id, ...data });
+    }
 }
 
 export default new Post();

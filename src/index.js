@@ -10,8 +10,9 @@ export default function Index()
   return (
     <BrowserRouter basename='/'>
       <Routes>
-        <Route path='/' element = {<App/>}></Route>
+        <Route path='/' element = {<ShowComponent/>}></Route>
         <Route path='/show' element = {<ShowComponent/>}></Route>
+        <Route path ='/addphotos' element = {<App/>}></Route>
       </Routes>
     </BrowserRouter>
   );
